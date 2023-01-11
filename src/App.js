@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"; //ESTILOS CSS DE LA APP
+import NavBar from "./components/navbar/navbar" //COMPONENTES DEL NAVBAR
+import { ItemListContainer } from "./components/itemlistcontainer/itemlistcontainer"; //CONTENEDOR DEL CARTWIDGET
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+
+      <NavBar/> 
+      <ItemListContainer text= 'francisco'/>
+
+    </>
   );
 }
-
-export default App;

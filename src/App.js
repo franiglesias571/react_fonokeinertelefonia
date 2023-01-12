@@ -9,7 +9,7 @@ export default function App() {
 
 
       <NavBar/> 
-      <ItemListContainer text= 'francisco'/>
+      <ItemListContainer text= 'francisco'/> {/*Vincula directamente el itemlistcontainer, mediante props.text*/}
 
     </>
   );

@@ -2,13 +2,12 @@ import React, {useEffect, useState } from 'react';
 import Title from '../title/title';
 import ItemCount from '../itemcount/itemcount';
 import ItemList from '../itemlist/itemlist';
-import HuaweiNova9 from '../assets/img/huawei_nova9.jpg';
 
 
 const telefonos = [
-    {id: 1, image: '../assets/img/huawei_nova9.jpg', title: "Huawei nova 9"},
-    {id: 2, image: '../assets/img/iphone_14.jpg', title: "iPhone 14"},
-    {id: 3, image: '../assets/img/iphone_13.jpg', title: "iPhone 13"},
+    {id: 1, image: '../assets/img/huawei_nova9.jpg', title: "Huawei nova 9", brand:"Huawei"},
+    {id: 2, image: '../assets/img/iphone_14.jpg', title: "iPhone 14", brand: "Apple"},
+    {id: 3, image: '../assets/img/iphone_13.jpg', title: "iPhone 13", brand: "Apple"},
 ];
 export const ItemListContainer = ( {text}  ) => {
     const [data, setData] = useState([]);
@@ -24,7 +23,7 @@ export const ItemListContainer = ( {text}  ) => {
     }, [])
 
     const onAdd= (quantity) => {
-        console.log(`Compraste ${quantity} unidades`);
+        
     }
 
     return (

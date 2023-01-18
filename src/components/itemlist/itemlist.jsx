@@ -1,9 +1,11 @@
- import Item from '../item/item';
+import Item from '../item/item';
 import React from 'react';
 
-const ItemList = ({data}) => {
+const ItemList = ({telefonos}) => {
     return (
-        data.map(telefono =>{ return <Item key={telefono.id} info={telefono} />})
+       <div style={{display:'flex', justifyContent:'space-around', alignItems:'center', flexWrap:'wrap'}}>
+        { telefonos.map(telefono => <Item key={telefono.id} info={telefono} />)}
+       </div>
     );
 }
 

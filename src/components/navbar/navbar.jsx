@@ -38,6 +38,15 @@ function NavBar({count}) {
               <Link to="/">Home</Link>{" "}
             </li>
             <li>
+              <Link to="/categoria/Huawei">Huawei</Link>{" "}
+            </li>
+            <li>
+              <Link to="/categoria/Apple">Apple</Link>{" "}
+            </li>
+            <li>
+              <Link to="/categoria/Xiaomi">Xiaomi</Link>{" "}
+            </li>
+            <li>
               <Link to="faq.html">FAQ's</Link>{" "}
             </li>
             <li>
@@ -47,7 +56,7 @@ function NavBar({count}) {
               <Link to="Contacto.html">Contacto</Link>{" "}
             </li>
             <li>
-              <Link to="Carrito.html"><CartWidget/> {count}</Link>{" "}
+              <Link to="Carrito.html"><CartWidget/></Link>{" "}
             </li>
           </ul>
         </div>
@@ -56,4 +65,4 @@ function NavBar({count}) {
   );
 }
 
-export default NavBar;
+export default NavBar

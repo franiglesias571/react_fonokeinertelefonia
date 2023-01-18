@@ -1,6 +1,7 @@
 import React from 'react';
 import "./navbarstyles.css";
 import CartWidget from '../cartwidget/cartwidget';
+import {Link} from "react-router-dom"
 
 
 function NavBar({count}) {
@@ -8,7 +9,7 @@ function NavBar({count}) {
     <>
       {" "}
       <nav>
-        <a href="index.html">
+        <Link to="/">
           <svg
             id="logo-70"
             width="78"
@@ -29,24 +30,24 @@ function NavBar({count}) {
               fill="#394149"
             ></path>{" "}
           </svg>{" "}
-        </a>
+        </Link>
 
         <div>
           <ul id="navbar">
             <li>
-              <a href="index.html">Home</a>{" "}
+              <Link to="/">Home</Link>{" "}
             </li>
             <li>
-              <a href="index.html">FAQ's</a>{" "}
+              <Link to="faq.html">FAQ's</Link>{" "}
             </li>
             <li>
-              <a href="index.html">Quienes somos's</a>{" "}
+              <Link to="Quienes-somos.html">Quienes somos's</Link>{" "}
             </li>
             <li>
-              <a href="index.html">Contacto</a>{" "}
+              <Link to="Contacto.html">Contacto</Link>{" "}
             </li>
             <li>
-              <a href="index.html"><CartWidget/> {count}</a>{" "}
+              <Link to="Carrito.html"><CartWidget/> {count}</Link>{" "}
             </li>
           </ul>
         </div>

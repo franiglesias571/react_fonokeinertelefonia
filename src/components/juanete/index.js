@@ -2,7 +2,7 @@ import "./style.css";
 import ItemCount from "../itemcount/itemcount";
 import ItemList from "../itemlist/itemlist";
 import {PropertyDetail} from "../ItemDetailContainer/propertydetail"
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 function Card({count, setCount}){
     // useEffect(() => {
@@ -15,4 +15,4 @@ function Card({count, setCount}){
 }
 
 
-export default Card;
+export default Card;  

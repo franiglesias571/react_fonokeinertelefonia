@@ -1,14 +1,10 @@
 import React, {useEffect, useState } from 'react';
-import Title from '../title/title';
+
 import ItemCount from '../itemcount/itemcount';
 import ItemList from '../itemlist/itemlist';
 
 
-// const telefonos = [
-//     {id: 1, image: '../assets/img/huawei_nova9.jpg', title: "Huawei nova 9", brand:"Huawei"},
-//     {id: 2, image: '../assets/img/iphone_14.jpg', title: "iPhone 14", brand: "Apple"},
-//     {id: 3, image: '../assets/img/iphone_13.jpg', title: "iPhone 13", brand: "Apple"},
-// ];
+// DONDE SEA QUE USE 
 export const ItemListContainer = ( {telefonos}  ) => {
     const [data, setData] = useState([]);
     useEffect(() =>{

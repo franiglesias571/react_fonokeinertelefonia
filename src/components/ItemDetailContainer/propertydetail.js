@@ -1,9 +1,8 @@
 import React, {useEffect, useState } from 'react';
-import Title from '../title/title';
 import ItemCount from '../itemcount/itemcount';
 import ItemList from '../itemlist/itemlist';
 
-
+//aca deberia de ser item o data y no itemdetailcontainer
 export const PropertyDetail = [  
 
     {
@@ -11,7 +10,7 @@ export const PropertyDetail = [
         Marca:"Huawei",
         Modelo: "Huawei Nova 9",
         Imagen:"./Img_property/huawei_nova9.jpg",
-        Precio:"Desde $8500",
+        Precio:"Desde $8.500",
         Tamaño:"6,57 pulgadas",
         Span:"Popular Properties", //EL NOMBRE DEL SPAN CONECTA AL PROPERTY.JSX POR EL SPAN NO OLVIDAR! 
         },
@@ -29,7 +28,7 @@ export const PropertyDetail = [
     Marca:"Xiaomi",
     Modelo: "Pocox3 Pro ",
     Imagen:"./Img_property/pocox3_pro.jpg",
-    Precio:"Desde $",
+    Precio:"Desde $18.500",
     Tamaño:" pulgadas",
     Span:""}
     

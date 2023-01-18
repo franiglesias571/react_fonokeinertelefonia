@@ -11,17 +11,17 @@ export default function App() {
   const [count, setCount] = useState(0);
   return (
     <>
-    <NavBar count={count}/>
     <BrowserRouter>
+    <NavBar/>
       <Routes>
-        {/* <Route path="/" element={<ItemListContainer telefonos={PropertyDetail}/>} /> ESA ULTIMA /> ENCIERRA EL ROUTE */}
+        {/* <Route path="/" element={<ItemListContainer telefonos={PropertyDetail}/>} />  */}
         <Route path="/" element={<Card count={count} setCount={setCount}/>} /> {/* ESA ULTIMA /> ENCIERRA EL ROUTE*/}
         <Route path="/contacto" element={<div><h1>Holi xd</h1></div>} />
         <Route path="/:id" element={<Product/>} />
         <Route path="/checkout" element={<div><h1>Compralo ya</h1></div>} />
 
-
-
+      
+      <Route path="*" element={<h2>ERROR 404. Página no encontrada. </h2>}/>
       </Routes>
     </BrowserRouter>
 

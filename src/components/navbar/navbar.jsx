@@ -3,7 +3,7 @@ import "./navbarstyles.css";
 import CartWidget from '../cartwidget/cartwidget';
 
 
-function NavBar() {
+function NavBar({count}) {
   return (
     <>
       {" "}
@@ -46,7 +46,7 @@ function NavBar() {
               <a href="index.html">Contacto</a>{" "}
             </li>
             <li>
-              <a href="index.html"><CartWidget/></a>{" "}
+              <a href="index.html"><CartWidget/> {count}</a>{" "}
             </li>
           </ul>
         </div>

@@ -37,7 +37,7 @@ export default function App() {
         <Route path="/item/:id" element={<ItemDetailContainer setPreOrder={setPreOrder} preorder={preorder}/>} />
         <Route path="/contacto" element={<div><h1>Holi xd</h1></div>} />
         <Route path="/carrito/" element={<Carrito preorder={preorder} setPreorder={setPreOrder} cart={cart} setCart={setCart} notify={notify}/>} />
-        <Route path="/felicitaciones" element={<main><p className="">Gracias por su compra</p></main>} />
+        <Route path="/felicitaciones" element={<main><p className="felicidades">Gracias por su compra</p></main>} />
         <Route path="*" element={<h2>ERROR 404. Página no encontrada. </h2>}/>
       </Routes>
       <ToastContainer />

@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import ItemList from '../itemlist/itemlist';
-import {PropertyDetail} from '../ItemDetailContainer/propertydetail'
+import {PropertyDetail} from '../../services/propertydetail'
 import { useParams } from 'react-router-dom';
 // DONDE SEA QUE USE 
 export const ItemListContainer = ( ) => {
@@ -22,9 +22,12 @@ export const ItemListContainer = ( ) => {
 
     }, [id])
 
-   
 
     return (
+        <main>
+        <h1>¡Chequea nuestro catálogo!</h1>
         <ItemList telefonos={data}/>
+        </main>
+      
     );
 }

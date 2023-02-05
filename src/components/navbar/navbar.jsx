@@ -47,16 +47,14 @@ function NavBar({count}) {
               <Link to="/categoria/Xiaomi">Xiaomi</Link>{" "}
             </li>
             <li>
-              <Link to="faq.html">FAQ's</Link>{" "}
+              <Link to="/categoria/Nokia">Nokia</Link>{" "}
+            </li>
+          
+            <li>
+              <Link to="Contacto">Contacto</Link>{" "}
             </li>
             <li>
-              <Link to="Quienes-somos.html">Quienes somos's</Link>{" "}
-            </li>
-            <li>
-              <Link to="Contacto.html">Contacto</Link>{" "}
-            </li>
-            <li>
-              <Link to="Carrito.html"><CartWidget/></Link>{" "}
+              <Link to="Carrito"><CartWidget/></Link>{" "}
             </li>
           </ul>
         </div>

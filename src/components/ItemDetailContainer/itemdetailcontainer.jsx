@@ -1,9 +1,9 @@
 import React, {useEffect, useState } from 'react';
-import {PropertyDetail} from '../ItemDetailContainer/propertydetail'
+import {PropertyDetail} from '../../services/propertydetail'
 import { useParams } from 'react-router-dom';
 import ItemCount from '../itemcount/itemcount';
 // DONDE SEA QUE USE 
-export const ItemDetailContainer = ( ) => {
+export const ItemDetailContainer = ( {preorder, setPreOrder} ) => {
     const [item, setItem] = useState({});
     const {id}= useParams()
     const onAdd = (cantidad) => {
@@ -25,10 +25,10 @@ export const ItemDetailContainer = ( ) => {
             <div>
                 <h2>Detalle de :{item.Modelo}</h2>
                 <img src={item.Imagen} alt={item.Modelo}/>
-                <p>Marca:{item.Marca}</p>
+                <p>Marca: {item.Marca}</p>
                 <p>Tamaño: {item.Tamaño}</p>
-                <p>{item.Precio}</p>
-                <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+                <p> ${item.Precio}</p>
+                <ItemCount initial={1} stock={5} onAdd={onAdd} setPreOrder={setPreOrder} preorder={preorder} id={id}/>
             </div>
         </> 
     );

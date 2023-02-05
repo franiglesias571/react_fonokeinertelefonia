@@ -1,0 +1,27 @@
+.main{
+    background-color: #BDCDD6;
+}
+.tabla_compras{
+    margin: 15%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  ;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 450;
+     
+}
+
+.precio_confirmacion_compra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  
+}
